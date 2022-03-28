@@ -15,9 +15,9 @@ def trainSeating(trainSeat):
     n = 1
 
 
-    print("--------------------------------------------------------")
-    print("LB : LowerBerth | MB : MiddleBerth | UB : UpperBerth")
-    print("--------------------------------------------------------")
+    print("--------------------------------------------------------------------------------------------------------")
+    print("LB : LowerBerth | MB : MiddleBerth | UB : UpperBerth | SLB : SideLowerBerth | SUB : SideUpperBerth")
+    print("--------------------------------------------------------------------------------------------------------")
     
     while count < itr:
         for i in range(n, seat[count]):
@@ -32,19 +32,24 @@ def trainSeating(trainSeat):
         n += 8
         
         if (trainSeat in (str(mainOppComp[0])) or (trainSeat in str(maincomp[0])) or (trainSeat in str(sidecomp[0]))):
-            print(trainSeat + "LB")
+            if (trainSeat in str(sidecomp[0])):
+                print(trainSeat + "(SLB)")
+                return trainSeat
+            print(trainSeat + "(LB)")
             return trainSeat
         elif (trainSeat in (str(mainOppComp[1])) or (trainSeat in str(maincomp[1]))):
-            print(trainSeat + "MB")
+            print(trainSeat + "(MB)")
             return trainSeat
         elif (trainSeat in (str(mainOppComp[2])) or (trainSeat in str(maincomp[2])) or (trainSeat in str(sidecomp[1]))):
-            print(trainSeat + "UB")
+            if (trainSeat in str(sidecomp[1])):
+                print(trainSeat + "(SUB)")
+                return trainSeat
+            print(trainSeat + "(UB)")
             return trainSeat
         
         maincomp = []
         sidecomp = []
         mainOppComp = []
-
 
 trainSeat = int(input("Please enter the seat number : "))
 trainCap = 73
