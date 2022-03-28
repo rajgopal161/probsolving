@@ -31,7 +31,7 @@ def trainSeating(trainSeat):
         count += 1
         n += 8
         
-        if (trainSeat in (str(mainOppComp[0])) or (trainSeat in str(maincomp[0])) or (trainSeat in str(sidecomp[0]))):
+        if (trainSeat in (str(mainOppComp[0])) or (trainSeat in str(maincomp[0])) or (trainSeat in str(sidecomp))):
             if (trainSeat in str(sidecomp[0])):
                 print(trainSeat + "(SLB)")
                 return trainSeat
@@ -40,7 +40,7 @@ def trainSeating(trainSeat):
         elif (trainSeat in (str(mainOppComp[1])) or (trainSeat in str(maincomp[1]))):
             print(trainSeat + "(MB)")
             return trainSeat
-        elif (trainSeat in (str(mainOppComp[2])) or (trainSeat in str(maincomp[2])) or (trainSeat in str(sidecomp[1]))):
+        elif (trainSeat in (str(mainOppComp[2])) or (trainSeat in str(maincomp[2])) or (trainSeat in str(sidecomp))):
             if (trainSeat in str(sidecomp[1])):
                 print(trainSeat + "(SUB)")
                 return trainSeat
