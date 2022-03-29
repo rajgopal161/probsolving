@@ -5,7 +5,7 @@ def trainSeating(trainSeat):
     # print("The Size of train : \n",train)
     for i in train:
         if i % 8 == 0:
-            seat.append(i + 1)
+            seat.append(i)
     # print("\nSeating Capacity in each compartment : \n",seat)
     itr = len(seat)
     count = 0
