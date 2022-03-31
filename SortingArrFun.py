@@ -2,7 +2,7 @@ def sortarr(arr):
     arrlen = len(arr)
     count = 0
     n = 0
-    while count <= arrlen-3:
+    while count <= arrlen:
         while n <= (arrlen-2):
             if arr[n] > arr[n+1]:
                 temp = arr[n]
@@ -13,7 +13,7 @@ def sortarr(arr):
         n = 0
         count += 1
         
-        if count == (arrlen-3):
+        if count == (arrlen):
             return(arr)        
         
     
