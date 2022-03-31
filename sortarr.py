@@ -1,4 +1,4 @@
-arr = [6,3,7,9,4,1,2,5]
+arr = [6,10,3,7,9,4,8,1,2,5]
 arrlen = len(arr)
 count = 1
 n = 0
@@ -9,7 +9,9 @@ while count <= arrlen-3:
             temp = arr[n]
             arr[n] = arr[n+1]
             arr[n+1] = temp
-            print(arr)
+            
         n += 1
+        
     n = 0
     count += 1
+    print(arr)
