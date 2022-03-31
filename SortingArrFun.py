@@ -19,4 +19,5 @@ def sortarr(arr):
         
     
 arr = [6,3,7,9,4,8,1,2,5]
-print(sortarr(arr))
+print(arr, "Before Sorting")
+print(sortarr(arr), "After Sorting")
