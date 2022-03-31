@@ -1,9 +1,9 @@
 arr = [6,3,7,9,4,1,2,5]
 arrlen = len(arr)
-count = 0
+count = 1
 n = 0
 
-while count <= arrlen:
+while count <= arrlen-3:
     while n <= (arrlen-2):
         if arr[n] > arr[n+1]:
             temp = arr[n]
