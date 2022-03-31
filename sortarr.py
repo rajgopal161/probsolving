@@ -11,6 +11,8 @@ while count <= (arrlen-3):
             arr[n+1] = temp
             
         n += 1
+    if count == (arrlen-3):
+        print(arr)
         
     n = 0
     count += 1
