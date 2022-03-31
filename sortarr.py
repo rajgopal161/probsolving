@@ -11,6 +11,5 @@ while count <= arrlen:
             arr[n+1] = temp
             print(arr)
         n += 1
-        count += 1
     n = 0
     count = 0
