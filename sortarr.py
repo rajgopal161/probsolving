@@ -12,4 +12,4 @@ while count <= arrlen:
             print(arr)
         n += 1
     n = 0
-    count = 0
+    count += 1
